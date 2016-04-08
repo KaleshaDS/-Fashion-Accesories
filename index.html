@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/queries.css">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min">
+</head>
+<body>
+	<header> <!--navbar principal--> <!--TERMINADA-->
+		<nav class="navbar navbar-default" role="navigation">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+    			 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      				<span class="sr-only">Desplegar navegación</span>
+     				<span class="icon-bar"></span>
+     				<span class="icon-bar"></span>
+     				<span class="icon-bar"></span>
+   				 </button>
+      				<h6 >Default Welcome Msg!</h6>
+    			</div>
+    			<div class="collapse navbar-collapse navbar-ex1-collapse">
+    				<ul class="nav navbar-nav pull-right">
+      					<li class="dropdown">
+        					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="images/flag1.png"/> Languaje
+       						<span class="caret"></span></a>
+       						<ul class="dropdown-menu">
+       							<li><a href="#"><img src="images/flag1.png"/> English</a></li>
+          						<li><a href="#"><img src="images/flag2.png"/> Freanch</a></li>
+        					</ul>
+      					</li>
+      					<li class="dropdown">
+        					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-usd"></i> Currency
+       						<span class="caret"></span></a>
+       						<ul class="dropdown-menu">
+          						<li><a href="#"><i class="fa fa-usd"></i> Currency</a></li>
+          						<li><a href="#"><i class="fa fa-usd"></i> Currency</a></li>
+          						<li><a href="#"><i class="fa fa-usd"></i> Currency</a></li> 
+        					</ul>
+      					</li>
+      					<li class="dropdown">
+        					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> My Account
+       						<span class="caret"></span></a>
+       						<ul class="dropdown-menu">
+          						<li><a href="#">Page 1-1</a></li>
+          						<li><a href="#">Page 1-2</a></li>
+          						<li><a href="#">Page 1-3</a></li> 
+        					</ul>
+      					</li>
+   				 	</ul>
+   				</div>
+  			</div>
+		</nav>
+	</header>
+	<section> <!--seccion de logo--><!--TERMINADA-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<div>
+						<div class="left">
+							<i class="fa fa-clock-o fa-3x text-muted"></i>
+						</div>
+						<div class="left">
+							<span><h4 class="text-muted">OPENING TIME</h4></span>
+							<span class="text-muted">9.00 AM - 10.00 PM</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="text-center space_logo">
+						<img src="images/logo.png">
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div>
+						<form class="navbar-form navbar-left pull-right" role="search">
+      						<div class="form-group">
+        						<input type="text" class="form-control" placeholder="Search">
+      						</div>
+      						<button type="submit" class="btn btn-default pull-right"><i class="fa fa-search"></i></button>
+    					</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section> <!--barra de navegacion simple carrito de compras-->
+		<nav class="navbar navbar-default" role="navigation">
+  		<div class="container">
+    		<div class="navbar-header">
+    			<ul class="nav navbar-nav">
+      			<li id="pink"><a href="#">HOME</a></li>
+            <li id="pink"><a href="#">CONTACT US</a></li>
+          </ul>
+    		</div>
+    			<ul class="nav navbar-nav pull-right" id="black">       
+            <li class="dropdown" >
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-shopping-cart"></i> My Cart <p>2 intems(s) - $244.00</p></a>
+              <ul class="dropdown-menu ancho">
+                <li>
+                  <div class="left">
+                    <img class="left" src="images/cart-1.jpg"/>
+                  </div>
+                  <div class="left">
+                		<span>Aliquam Consequat</span>
+                		<p>1x<span>$ 500 </span></p>
+                		<p class="pull-right"><i class="fa fa-times"></i></p>
+                	</div>
+              	</li>
+                <li>
+                  <div class="left">
+                    <img class="left" src="images/cart-2.jpg"/>
+                  </div>
+                  <div class="left">
+                		<span>Aliquam Consequat</span>
+                		<p>1x<span>$ 500 </span></p>
+                		<p class="pull-right"><i class="fa fa-times"></i></p>
+                	</div>
+              	</li>
+              	<li>
+              	<div class="total">
+              		<p><strong>Sub-Total</strong></p>
+              		<span>$700</span>
+                  <p><strong>Sub-Total</strong></p>
+              		<span>$700</span>
+              		<p><strong>Sub-Total</strong></p>
+              		<span>$700</span>
+              	</div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section> 
+  <section> <!--seccion de slider--> <!--METER MEDIAQUERY PARA AJUSTAR TEXTO-->
+    <div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/slider1.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Autumn/winter lookbook</h1>
+              <h4>- 2 0 1 6 <span>c o l l e c t i o n</span> -</h4>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/slider2.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Autumn/winter lookbook</h1>
+              <h4>- 2 0 1 6 <span>c o l l e c t i o n</span> -</h4>        
+            </div>
+          </div>
+        </div>
+      </div>  
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="icon-prev"></span></a> 
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="icon-next"></span></a>  
+    </div>
+  </section>
+  <section class="space_seccion"> <!--seccion de banners--> <!--TERMINADA checar por q brinca-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <div class="leftb">
+            <img class="space-banner" src="images/banner1.jpg">
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="rightb">
+            <img class="" src="images/banner2.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <section class="space_seccion"> <!--seccion de ventas-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <ul class="list-unstyled list-inline text-center ">
+            <li><i class="fa fa-angle-left fa-3x"></i></li>
+            <li><a class="resalt text-muted" href="#"><strong>LATEST</strong></a></li>
+            <li><a class="resalt text-muted" href="#"><strong>BESTSELLER</strong></a></li>
+            <li><a class="resalt text-muted" href="#"><strong>SALE</strong></a></li>
+            <li><i class="fa fa-angle-right fa-3x"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-xs-6">
+          <div >
+            <img class="venta_marco" src="images/a1.jpg" alt="gloves">    
+          </div>
+          <div class="roja">NEW</div>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div>
+            <img class="venta_marco" src="images/b1.jpg" alt="gloves">
+          </div>
+          <div class="roja">NEW</div>
+          <div class="gray">SALE</div>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div>
+            <img class="venta_marco" src="images/c1.jpg" alt="gloves">
+          </div>
+            <div class="roja">NEW</div>
+            <div class="gray">SALE</div>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <div>
+            <img class="venta_marco" src="images/d1.jpg" alt="gloves">
+          </div>
+          <div class="roja">NEW</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-img space_seccion"> <!--seccion clientes--><!--TERMINADA-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <div>
+            <img class="clientes" src="images/client1.jpg" alt="clients">
+            <img class="clientes" src="images/client2.jpg" alt="clients">
+            <img class="clientes" src="images/client3.jpg" alt="clients">
+            <img class="clientes" src="images/client4.jpg" alt="clients">
+            <img class="clientes" src="images/client5.jpg" alt="clients">
+            <img class="clientes" src="images/client6.jpg" alt="clients">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section> <!--seccion mas compras-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <ul class="list-unstyled list-inline text-center ">
+            <li><i class="fa fa-angle-left fa-3x"></i></li>
+            <li><a class="resalt text-muted" href="#"><strong>CLOTHING</strong></a></li>
+            <li><a class="resalt text-muted" href="#"><strong>EQUIPMENTS</strong></a></li>
+            <li><a class="resalt text-muted" href="#"><strong>JEWELLARY</strong></a></li>
+            <li><i class="fa fa-angle-right fa-3x"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section> <!--primer footer-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-xs-3">
+          <div>
+            <h4 class="footer-b">ACCESORIES</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quam quidem sequi, est saepe distinctio aut. Vero porro dolorem rerum repudiandae fugit beatae, qui nulla asperiores tempora suscipit maxime hic</p>
+            <div class="btn-group">
+              <a class="btn btn-default" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn btn-default" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="btn btn-default" href="#"><i class="fa fa-rss"></i></a>
+              <a class="btn btn-default" href="#"><i class="fa fa-skype"></i></a>
+              <a class="btn btn-default" href="#"><i class="fa fa-dribbble"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9 col-xs-9">
+          <div class="row Mtop">
+            <div class="col-md-3 col-xs-6">
+              <h4 class="footer-b">MY ACCOUNT</h4>
+              <ul class="menu list-unstyled">
+                <li><a href="" class="text-muted"> My account</a></li>
+                <li><a href="" class="text-muted"> Order History</a></li>
+                <li><a href="" class="text-muted"> Wishlist</a></li>
+                <li><a href="" class="text-muted"> Newletter</a></li>
+              </ul>
+            </div>
+        <div class="col-md-3 col-xs-6">
+            <h4 class="footer-b">INFORMATION</h4>
+            <ul class="menu list-unstyled">
+              <li><a href="" class="text-muted"> About Us</a></li>
+              <li><a href="" class="text-muted"> Delivery Information</a></li>
+              <li><a href="" class="text-muted"> Privacy Policy</a></li>
+              <li><a href="" class="text-muted"> Terms & Conditions </a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <h4 class="footer-b">EXTRAS</h4>
+            <ul class="menu list-unstyled">
+              <li><a href="" class="text-muted"> Brands</a></li>
+              <li><a href="" class="text-muted"> Gift Vouchers</a></li>
+              <li><a href="" class="text-muted"> Affiliates</a></li>
+              <li><a href="" class="text-muted"> Specials</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+          <h4 class="footer-b">EXTRAS</h4>
+          <ul class="menu list-unstyled">
+            <li><a href="" class="text-muted"> Brands</a></li>
+            <li><a href="" class="text-muted"> Gift Vouchers</a></li>
+            <li><a href="" class="text-muted"> Affiliates</a></li>
+            <li><a href="" class="text-muted"> Specials</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <footer class="black">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <p>Copyright 2015 <span class="text-danger">BootExperts</span> All Rights reserved.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="pull-right">
+            <a href="#"><img src="images/payment.png"></a> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+      
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+
+</body>
+</html>
